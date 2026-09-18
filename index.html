@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#8d0707" />
+  <meta name="description" content="Cardápio digital oficial do Jhow Sushi House." />
+  <title>Jhow Sushi House · Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <img src="assets/logo.png" alt="" />
+      <span>Preparando o cardápio</span>
+    </div>
+  </div>
+
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="Jhow Sushi House - início">
+      <img src="assets/logo.png" alt="Logo Jhow Sushi House" />
+      <span><strong>Jhow</strong><small>sushi house</small></span>
+    </a>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="openSearch" aria-label="Buscar no cardápio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+      </button>
+      <button class="icon-btn" id="openQr" aria-label="Ver QR Code do cardápio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v6h-2zM14 18h2v2h-2z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-brush hero-brush-a"></div>
+      <div class="hero-brush hero-brush-b"></div>
+      <div class="hero-content reveal">
+        <span class="kicker">Cardápio oficial</span>
+        <h1>Uma experiência<br><em>feita na hora.</em></h1>
+        <p>Do clássico ao especial da casa, escolha seus favoritos e monte seu pedido.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#menu">Explorar cardápio</a>
+          <button class="btn btn-glass" id="heroQr">Abrir QR Code</button>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span>deslize</div>
+    </section>
+
+    <section class="menu-shell" id="menu">
+      <div class="section-head reveal">
+        <span class="kicker">Escolha sua experiência</span>
+        <h2>Nosso cardápio</h2>
+        <p>Use as categorias ou busque pelo nome do prato.</p>
+      </div>
+
+      <div class="category-wrap" id="categoryWrap">
+        <nav class="categories" id="categories" aria-label="Categorias do cardápio"></nav>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="info-band reveal">
+      <div>
+        <span class="kicker">Informações & pedidos</span>
+        <h2>Feito para chegar fresco à sua mesa.</h2>
+      </div>
+      <div class="info-cards">
+        <article><span>01</span><p>Informe aos nossos atendentes sobre restrições alimentares.</p></article>
+        <article><span>02</span><p>Nossos pratos são preparados na hora para garantir o máximo frescor e qualidade.</p></article>
+        <article><span>03</span><p>Imagens meramente ilustrativas. Preços sujeitos a alteração.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <button class="cart-fab" id="cartFab" aria-label="Abrir pedido">
+    <span class="cart-icon">🛒</span>
+    <span class="cart-copy"><small>Seu pedido</small><strong id="cartFabTotal">R$ 0,00</strong></span>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-cart></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer-head">
+        <div><span class="kicker">Pedido</span><h2 id="cartTitle">Sua seleção</h2></div>
+        <button class="close-btn" data-close-cart aria-label="Fechar pedido">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">
+        <span>🍣</span>
+        <strong>Seu pedido está vazio</strong>
+        <p>Adicione seus favoritos do cardápio.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-row"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <button class="btn btn-gold btn-full" id="checkoutBtn">Copiar pedido</button>
+        <small id="checkoutHint">Configure o WhatsApp em <code>config.js</code> para enviar o pedido direto.</small>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="searchModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-search></div>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Busca no cardápio">
+      <button class="close-btn" data-close-search aria-label="Fechar busca">×</button>
+      <span class="kicker">Encontre seu favorito</span>
+      <label class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+        <input id="searchInput" type="search" placeholder="Ex.: salmão, temaki, hot roll..." autocomplete="off" />
+      </label>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="qrModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-qr></div>
+    <div class="qr-panel" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+      <button class="close-btn" data-close-qr aria-label="Fechar QR Code">×</button>
+      <img class="qr-logo" src="assets/logo.png" alt="" />
+      <span class="kicker">Escaneie e abra</span>
+      <h2 id="qrTitle">Cardápio digital</h2>
+      <div id="qrcode" class="qr-code"></div>
+      <p id="qrUrl"></p>
+      <button class="btn btn-gold btn-full" id="downloadQr">Baixar QR Code</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <img src="assets/logo.png" alt="Jhow Sushi House" />
+    <p>Jhow Sushi House · Bom apetite!</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="config.js"></script>
+  <script src="menu-data.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
