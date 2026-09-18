@@ -152,7 +152,7 @@ window.JOE_MENU = [
     title: 'Sobremesas',
     eyebrow: 'Para finalizar',
     items: [
-      {name:'Harumaky Chocolate', price:12.90, desc:'6 unidades'}
+      {name:'Harumaky Chocolate', price:19.90, desc:'6 unidades'}
     ]
   }
 ];
