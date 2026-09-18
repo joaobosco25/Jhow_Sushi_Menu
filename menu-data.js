@@ -109,5 +109,50 @@ window.JOE_MENU = [
       {name:'Combinado Hamamatsu (28 Peças)', price:79.90, desc:'6 Sashimis, 4 Niguiris, 6 Hossomakis Salmão, 4 Uramakis Salmão, 2 Joys Salmão, 1 Temaki Salmão e 5 Hot Rolls'},
       {name:'Combinado Premium Isekai (60 Peças)', price:165.00, desc:'20 Uramakis Philadelphia, 20 Hot Rolls Philadelphia, 16 Sashimis Salmão e 4 Joys Salmão', premium:true}
     ]
+  },
+  {
+    id: 'bebidas',
+    title: 'Bebidas',
+    eyebrow: 'Para acompanhar',
+    groups: [
+      {label:'Refrigerantes · R$ 7,90', items:[
+        {name:'Coca', price:7.90},
+        {name:'Coca Zero', price:7.90},
+        {name:'Guaraná', price:7.90},
+        {name:'Guaraná Zero', price:7.90},
+        {name:'Sprite', price:7.90},
+        {name:'Sprite Zero', price:7.90},
+        {name:'Fanta Laranja', price:7.90},
+        {name:'Fanta Uva', price:7.90},
+        {name:'Água Tônica', price:7.90},
+        {name:'Água Tônica Zero', price:7.90},
+        {name:'Água sem Gás', price:7.90},
+        {name:'Água com Gás', price:7.90}
+      ]},
+      {label:'Sucos · R$ 14,90', items:[
+        {name:'Morango', price:14.90},
+        {name:'Morango com Laranja', price:14.90},
+        {name:'Abacaxi', price:14.90},
+        {name:'Abacaxi com Hortelã', price:14.90},
+        {name:'Limão', price:14.90},
+        {name:'Laranja', price:14.90},
+        {name:'Maracujá', price:14.90}
+      ]},
+      {label:'Cervejas Long Neck · R$ 11,90', items:[
+        {name:'Heineken', price:11.90},
+        {name:'Heineken Zero', price:11.90},
+        {name:'Corona', price:11.90},
+        {name:'Corona Zero', price:11.90},
+        {name:'Stella Artois', price:11.90}
+      ]}
+    ]
+  },
+  {
+    id: 'sobremesas',
+    title: 'Sobremesas',
+    eyebrow: 'Para finalizar',
+    items: [
+      {name:'Harumaky Chocolate', price:12.90, desc:'6 unidades'}
+    ]
   }
 ];

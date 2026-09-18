@@ -24,3 +24,5 @@ Mesmo que os arquivos sejam abertos localmente ou a partir de outra URL, o QR co
 - `app.js` — busca, navegação, animações e QR Code
 - `config.js` — configuração opcional da URL
 - `assets/` — logo e imagem principal
+
+Atualização: bebidas e sobremesa incluídas no menu digital.
