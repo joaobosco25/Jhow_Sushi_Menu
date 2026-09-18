@@ -44,7 +44,7 @@
       <div class="hero-content reveal">
         <span class="kicker">Cardápio oficial</span>
         <h1>Uma experiência<br><em>feita na hora.</em></h1>
-        <p>Do clássico ao especial da casa, escolha seus favoritos e monte seu pedido.</p>
+        <p>Do clássico ao especial da casa, explore sabores preparados na hora.</p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#menu">Explorar cardápio</a>
           <button class="btn btn-glass" id="heroQr">Abrir QR Code</button>
@@ -69,43 +69,16 @@
 
     <section class="info-band reveal">
       <div>
-        <span class="kicker">Informações & pedidos</span>
+        <span class="kicker">Informações</span>
         <h2>Feito para chegar fresco à sua mesa.</h2>
       </div>
       <div class="info-cards">
-        <article><span>01</span><p>Informe aos nossos atendentes sobre restrições alimentares.</p></article>
-        <article><span>02</span><p>Nossos pratos são preparados na hora para garantir o máximo frescor e qualidade.</p></article>
-        <article><span>03</span><p>Imagens meramente ilustrativas. Preços sujeitos a alteração.</p></article>
+        <article><span></span><p>Informe aos nossos atendentes sobre restrições alimentares.</p></article>
+        <article><span></span><p>Nossos pratos são preparados na hora para garantir o máximo frescor e qualidade.</p></article>
+        <article><span></span><p>Imagens meramente ilustrativas. Preços sujeitos a alteração.</p></article>
       </div>
     </section>
   </main>
-
-  <button class="cart-fab" id="cartFab" aria-label="Abrir pedido">
-    <span class="cart-icon">🛒</span>
-    <span class="cart-copy"><small>Seu pedido</small><strong id="cartFabTotal">R$ 0,00</strong></span>
-    <span class="cart-count" id="cartCount">0</span>
-  </button>
-
-  <aside class="drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-backdrop" data-close-cart></div>
-    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-      <div class="drawer-head">
-        <div><span class="kicker">Pedido</span><h2 id="cartTitle">Sua seleção</h2></div>
-        <button class="close-btn" data-close-cart aria-label="Fechar pedido">×</button>
-      </div>
-      <div class="cart-items" id="cartItems"></div>
-      <div class="cart-empty" id="cartEmpty">
-        <span>🍣</span>
-        <strong>Seu pedido está vazio</strong>
-        <p>Adicione seus favoritos do cardápio.</p>
-      </div>
-      <div class="cart-footer">
-        <div class="total-row"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
-        <button class="btn btn-gold btn-full" id="checkoutBtn">Copiar pedido</button>
-        <small id="checkoutHint">Configure o WhatsApp em <code>config.js</code> para enviar o pedido direto.</small>
-      </div>
-    </div>
-  </aside>
 
   <div class="modal" id="searchModal" aria-hidden="true">
     <div class="modal-backdrop" data-close-search></div>
