@@ -1,4 +1,4 @@
-# Jhow Sushi House — GitHub Pages (v7 cache fix)
+# Jhow Sushi House — GitHub Pages (v8 preços atualizados)
 
 Versão preparada para corrigir divergência entre Live Server e GitHub Pages causada por cache de arquivos estáticos no navegador/CDN.
 
