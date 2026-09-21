@@ -94,8 +94,8 @@ window.JOE_MENU = [
     eyebrow: 'Para compartilhar',
     featured: true,
     items: [
-      {name:'Combo Tókio (20 Peças)', price:49.00, desc:'5 niguiris salmão, 5 salmonmakis, 2 joys salmão, 3 uramakis salmão e 5 hot rolls'},
-      {name:'Combinado Miyoshi Sushi', price:39.90, desc:'10 Hot Rolls + 1 Temaki à sua escolha'},
+      {name:'Combinado Tókio (20 Peças)', price:59.90, desc:'5 niguiris salmão, 5 salmonmakis, 2 joys salmão, 3 uramakis salmão e 5 hot rolls'},
+      {name:'Combinado Miyoshi Sushi', price:49.90, desc:'10 Hot Rolls + 1 Temaki à sua escolha'},
       {name:'Combo Hossomaki Filadélfia', price:32.90, desc:'10 peças de hossomaki Filadélfia com cream cheese, couve frita e gergelim'}
     ]
   },
@@ -105,8 +105,8 @@ window.JOE_MENU = [
     eyebrow: 'Experiência completa',
     featured: true,
     items: [
-      {name:'Combinado Jhow Sushi (22 Peças)', price:49.90, desc:'4 Sashimis Salmão, 2 Niguiris Salmão, 4 Hossomakis Salmão, 4 Joys Salmão c/ Geleia, 6 Hot Rolls e 2 Mini Temakis'},
-      {name:'Combinado Hamamatsu (28 Peças)', price:79.90, desc:'6 Sashimis, 4 Niguiris, 6 Hossomakis Salmão, 4 Uramakis Salmão, 2 Joys Salmão, 1 Temaki Salmão e 5 Hot Rolls'},
+      {name:'Combinado Jhow Sushi (22 Peças)', price:69.90, desc:'4 Sashimis Salmão, 2 Niguiris Salmão, 4 Hossomakis Salmão, 4 Joys Salmão c/ Geleia, 6 Hot Rolls e 2 Mini Temakis'},
+      {name:'Combinado Hamamatsu (28 Peças)', price:89.90, desc:'6 Sashimis, 4 Niguiris, 6 Hossomakis Salmão, 4 Uramakis Salmão, 2 Joys Salmão, 1 Temaki Salmão e 5 Hot Rolls'},
       {name:'Combinado Premium Isekai (60 Peças)', price:165.00, desc:'20 Uramakis Philadelphia, 20 Hot Rolls Philadelphia, 16 Sashimis Salmão e 4 Joys Salmão', premium:true}
     ]
   },
