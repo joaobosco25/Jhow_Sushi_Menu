@@ -4,16 +4,16 @@ window.JOE_MENU = [
     title: 'Entradas & Acompanhamentos',
     eyebrow: 'Para começar',
     items: [
-      {name:'Sunomono', price:19.90, desc:'Salada leve de pepino japonês com gergelim (200g)'},
-      {name:'Ceviche', price:19.90, desc:'Peixe marinado no limão com tempero especial (200g)'},
-      {name:'Gyoza (Bovino / Suíno)', price:19.90, desc:'Pastéis orientais grelhados na chapa (6 unidades)'},
-      {name:'Harumaki de Queijo', price:12.90, desc:'Rolinheiro de primavera crocante de queijo (6 un)'},
-      {name:'Tartar de Salmão c/ Amêndoas', price:19.90, desc:'Salmão picado com lâminas de amêndoas (90g)'},
-      {name:'Shimeji', price:22.90, desc:'Cogumelos salteados na manteiga e shoyu (200g)'},
-      {name:'Camarão Empanado', price:29.90, desc:'Camarões crocantes (6 unidades)'},
-      {name:'Tilápia Empanada (Individual)', price:19.90},
-      {name:'Tilápia Empanada (Porção)', price:49.90},
-      {name:'Porção Drumet Empanados', price:29.90},
+      {name:'Sunomono', price:19.90, image:'assets/menu/sunomono.jpg', desc:'Salada leve de pepino japonês com gergelim (200g)'},
+      {name:'Ceviche', price:19.90, image:'assets/menu/ceviche.jpg', desc:'Peixe marinado no limão com tempero especial (200g)'},
+      {name:'Gyoza (Bovino / Suíno)', price:19.90, image:'assets/menu/gyoza.jpg', desc:'Pastéis orientais grelhados na chapa (6 unidades)'},
+      {name:'Harumaki de Queijo', price:12.90, image:'assets/menu/harumaki-queijo.jpg', desc:'Rolinheiro de primavera crocante de queijo (6 un)'},
+      {name:'Tartar de Salmão c/ Amêndoas', price:19.90, image:'assets/menu/tartar-salmao-amendoas.jpg', desc:'Salmão picado com lâminas de amêndoas (90g)'},
+      {name:'Shimeji', price:22.90, image:'assets/menu/shimeji.jpg', desc:'Cogumelos salteados na manteiga e shoyu (200g)'},
+      {name:'Camarão Empanado', price:29.90, image:'assets/menu/camarao-empanado.jpg', desc:'Camarões crocantes (6 unidades)'},
+      {name:'Tilápia Empanada (Individual)', price:19.90, image:'assets/menu/tilapia-empanada-individual.jpg'},
+      {name:'Tilápia Empanada (Porção)', price:49.90, image:'assets/menu/tilapia-empanada-porcao.jpg'},
+      {name:'Porção Drumet Empanados', price:29.90, image:'assets/menu/drumet-empanado.jpg'},
       {name:'Gohan', price:9.90, desc:'Arroz japonês tradicional'},
       {name:'Arroz do Chef', price:19.90}
     ]
@@ -46,8 +46,8 @@ window.JOE_MENU = [
       {label:'Sem arroz · 100% recheio', items:[
         {name:'Temaki Salmão', price:29.90},
         {name:'Temaki Hot', price:29.90},
-        {name:'Temaki Philadelphia', price:34.00},
-        {name:'Temaki Ebi Furai', price:42.90}
+        {name:'Temaki Philadelphia', price:34.00, image:'assets/menu/temaki-philadelphia.jpg'},
+        {name:'Temaki Ebi Furai', price:42.90, image:'assets/menu/temaki-ebi-furai.jpg'}
       ]}
     ]
   },
@@ -56,10 +56,10 @@ window.JOE_MENU = [
     title: 'Joys',
     eyebrow: '4 unidades',
     items: [
-      {name:'Joy Salmão', price:29.90},
-      {name:'Joy Geleia', price:35.00},
-      {name:'Joy Maçaricado', price:35.90},
-      {name:'Joy Polenguinho & Geleia de Pimenta', price:24.00, desc:'Salmão fresco, cubo de Polenguinho maçaricado e geleia de pimenta'}
+      {name:'Joy Salmão', price:29.90, image:'assets/menu/joy-salmao.jpg'},
+      {name:'Joy Geleia', price:35.00, image:'assets/menu/joy-geleia.jpg'},
+      {name:'Joy Maçaricado', price:35.90, image:'assets/menu/joy-macaricado.jpg'},
+      {name:'Joy Polenguinho & Geleia de Pimenta', price:24.00, image:'assets/menu/joy-polenguinho-geleia-pimenta.jpg', desc:'Salmão fresco, cubo de Polenguinho maçaricado e geleia de pimenta'}
     ]
   },
   {
@@ -67,12 +67,12 @@ window.JOE_MENU = [
     title: 'Sashimis & Niguiris',
     eyebrow: 'Frescor',
     items: [
-      {name:'Sashimi Salmão (6 un)', price:24.90},
-      {name:'Sashimi Tilápia (6 un)', price:19.90},
-      {name:'Sashimi Atum (6 un)', price:34.90},
-      {name:'Niguiri Salmão (2 un)', price:9.90},
-      {name:'Ussuzukuri Tilápia (10 fatias)', price:29.90},
-      {name:'Ussuzukuri Salmão (10 fatias)', price:34.90}
+      {name:'Sashimi Salmão (6 un)', price:24.90, image:'assets/menu/sashimi-salmao.jpg'},
+      {name:'Sashimi Tilápia (6 un)', price:19.90, image:'assets/menu/sashimi-tilapia.jpg'},
+      {name:'Sashimi Atum (6 un)', price:34.90, image:'assets/menu/sashimi-atum.jpg'},
+      {name:'Niguiri Salmão (2 un)', price:9.90, image:'assets/menu/niguiri-salmao.jpg'},
+      {name:'Ussuzukuri Tilápia (10 fatias)', price:29.90, image:'assets/menu/ussuzukuri-tilapia.jpg'},
+      {name:'Ussuzukuri Salmão (10 fatias)', price:34.90, image:'assets/menu/ussuzukuri-salmao.jpg'}
     ]
   },
   {
@@ -80,12 +80,12 @@ window.JOE_MENU = [
     title: 'Rolls & Makis',
     eyebrow: 'Seleção da casa',
     items: [
-      {name:'Hossomaki Sake Maki', price:19.90},
-      {name:'Hot Roll (Tradicional)', price:24.00},
-      {name:'Uramaki Philadelphia (10 un)', price:29.90},
-      {name:'Uramaki Coroa (10 un)', price:34.90},
-      {name:'Uramaki Ebi Furai', price:29.90},
-      {name:'Neta Maki de Camarão (6 un)', price:39.90}
+      {name:'Hossomaki Sake Maki', price:19.90, image:'assets/menu/hossomaki-sake-maki.jpg'},
+      {name:'Hot Roll (Tradicional)', price:24.00, image:'assets/menu/hot-roll-tradicional.jpg'},
+      {name:'Uramaki Philadelphia (10 un)', price:29.90, image:'assets/menu/uramaki-philadelphia.jpg'},
+      {name:'Uramaki Coroa (10 un)', price:34.90, image:'assets/menu/uramaki-coroa.jpg'},
+      {name:'Uramaki Ebi Furai', price:29.90, image:'assets/menu/uramaki-ebi-furai.jpg'},
+      {name:'Neta Maki de Camarão (6 un)', price:39.90, image:'assets/menu/neta-maki-camarao.jpg'}
     ]
   },
   {
@@ -94,7 +94,7 @@ window.JOE_MENU = [
     eyebrow: 'Para compartilhar',
     featured: true,
     items: [
-      {name:'Combinado Tókio (20 Peças)', price:59.90, desc:'5 niguiris salmão, 5 salmonmakis, 2 joys salmão, 3 uramakis salmão e 5 hot rolls'},
+      {name:'Combinado Tókio (20 Peças)', price:59.90, image:'assets/menu/combinado-tokio.jpg', desc:'5 niguiris salmão, 5 salmonmakis, 2 joys salmão, 3 uramakis salmão e 5 hot rolls'},
       {name:'Combinado Miyoshi Sushi', price:49.90, desc:'10 Hot Rolls + 1 Temaki à sua escolha'},
       {name:'Combo Hossomaki Filadélfia', price:32.90, desc:'10 peças de hossomaki Filadélfia com cream cheese, couve frita e gergelim'}
     ]
