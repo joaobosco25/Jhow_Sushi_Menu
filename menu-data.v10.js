@@ -24,7 +24,7 @@ window.JOE_MENU = [
     eyebrow: 'Da cozinha',
     items: [
       {name:'Big Sushi Dog', price:19.90, image:'assets/menu/big-sushi-dog.jpg'},
-      {name:'JHOW Burguer de Salmão', price:29.90, image:'assets/menu/jhow-burguer-salmao.jpg'},
+      {name:'JHOW Burguer de Salmão', price:29.90, image:'assets/menu/jhow-burguer-salmao-v14.jpg'},
       {name:'Poke Salmão', price:39.90, image:'assets/menu/poke-salmao.jpg'},
       {name:'Bentô de Salmão Grelhado', price:49.90, image:'assets/menu/bento-salmao-grelhado.jpg'},
       {name:'Bentô de Camarão Empanado', price:49.90, image:'assets/menu/bento-camarao-empanado.jpg'},
